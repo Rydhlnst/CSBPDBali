@@ -16,13 +16,6 @@ const waIcon = renderToStaticMarkup(
   }),
 )
 
-const mailIcon = renderToStaticMarkup(
-  createElement(RiMailFill, {
-    className: 'inline align-[-2px] text-[#065F46]',
-    'aria-hidden': 'true',
-  }),
-)
-
 const waIconLg = renderToStaticMarkup(
   createElement(RiWhatsappFill, {
     className: 'inline text-[1.5em] text-[#10B981]',
