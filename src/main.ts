@@ -64,6 +64,10 @@ const youtubeIcon = renderToStaticMarkup(
   }),
 )
 
+const waNumber = '6282373341774'
+const waTemplateText = encodeURIComponent('Halo CS Bank BPD Bali, saya ingin mendapatkan bantuan.')
+const waLink = `https://wa.me/${waNumber}?text=${waTemplateText}`
+
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <header class="sticky top-0 z-30 border-b border-[#2a2a2a] bg-gradient-to-r from-[#111] via-[#1a1a1a] to-[#101214] text-white">
     <div class="mx-auto flex min-h-[56px] w-[min(1320px,calc(100%-24px))] items-center justify-between gap-4 py-2 md:min-h-[64px]">
@@ -75,9 +79,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       </div>
 
       <div class="hidden items-center gap-6 lg:flex">
-        <a href="#" class="max-w-[220px] truncate text-sm font-semibold text-white no-underline">Call Center Bank BPD Bali - Cust...</a>
-        <a href="#" class="max-w-[250px] truncate text-sm font-semibold text-white no-underline">Cara Menghubungi Call Center Ban...</a>
-        <a href="#" class="max-w-[210px] truncate text-sm font-semibold text-white no-underline">Cara Buka Blokir Bank BPD Bali</a>
+        <a href="${waLink}" target="_blank" rel="noreferrer" class="max-w-[220px] truncate text-sm font-semibold text-white no-underline">Call Center Bank BPD Bali - Cust...</a>
+        <a href="${waLink}" target="_blank" rel="noreferrer" class="max-w-[250px] truncate text-sm font-semibold text-white no-underline">Cara Menghubungi Call Center Ban...</a>
+        <a href="${waLink}" target="_blank" rel="noreferrer" class="max-w-[210px] truncate text-sm font-semibold text-white no-underline">Cara Buka Blokir Bank BPD Bali</a>
         <button class="inline-flex h-8 w-8 items-center justify-center rounded-none text-lg" aria-label="Cari"></button>
       </div>
 
@@ -88,9 +92,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <aside id="mobile-menu-panel" class="h-full w-[82%] max-w-[320px] bg-gradient-to-b from-[#0f1012] to-[#17181c] p-4 text-white shadow-2xl">
       <button id="menu-close-btn" class="mb-6 inline-flex h-8 w-8 items-center justify-center text-3xl leading-none text-white" aria-label="Tutup Menu">&times;</button>
       <nav class="grid gap-3">
-        <a href="#" class="text-[14px] leading-[1.25] font-bold text-white no-underline">Call Center Bank BPD Bali - Customer Service Bank BPD Bali Layanan</a>
-        <a href="#" class="text-[14px] leading-[1.25] font-bold text-white no-underline">Cara Menghubungi Call Center Bank BPD Bali</a>
-        <a href="#" class="text-[14px] leading-[1.25] font-bold text-white no-underline">Cara Buka Blokir Bank BPD Bali</a>
+        <a href="${waLink}" target="_blank" rel="noreferrer" class="text-[14px] leading-[1.25] font-bold text-white no-underline">Call Center Bank BPD Bali - Customer Service Bank BPD Bali Layanan</a>
+        <a href="${waLink}" target="_blank" rel="noreferrer" class="text-[14px] leading-[1.25] font-bold text-white no-underline">Cara Menghubungi Call Center Bank BPD Bali</a>
+        <a href="${waLink}" target="_blank" rel="noreferrer" class="text-[14px] leading-[1.25] font-bold text-white no-underline">Cara Buka Blokir Bank BPD Bali</a>
       </nav>
     </aside>
   </div>
@@ -102,7 +106,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </section>
 
     <section class="mb-6 mt-5 w-screen [margin-left:calc(50%-50vw)] [margin-right:calc(50%-50vw)]">
-      <a href="tel:082373341774" class="flex w-full items-center overflow-hidden rounded-none border border-[#10B981] bg-[#ECFDF5] py-2 text-[#065F46] no-underline">
+      <a href="${waLink}" target="_blank" rel="noreferrer" class="flex w-full items-center overflow-hidden rounded-none border border-[#10B981] bg-[#ECFDF5] py-2 text-[#065F46] no-underline">
         <span class="animate-marquee inline-block whitespace-nowrap text-sm font-bold sm:text-lg">Selamat Datang Dilayanan Bank BPD Bali 082373341774</span>
         <span class="animate-marquee inline-block whitespace-nowrap text-sm font-bold sm:text-lg" aria-hidden="true">Selamat Datang Dilayanan Bank BPD Bali 082373341774</span>
       </a>
@@ -114,7 +118,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <h2 class="mb-2 text-2xl font-bold leading-snug text-[#065F46] sm:text-3xl">Panduan Cara Menghubungi Customer Service (CS) Bank BPD Bali</h2>
           <p class="text-[15px] leading-[1.7] text-[#111827] sm:text-base">
             Hubungi Customer Service (CS) Bank BPD Bali: Call Center 082373341774 (WhatsApp) ${waIcon} 082373341774 (Live Chat) Email:
-            <a class="font-semibold text-[#047857]" href="mailto:csbpdbali@gmail.com">csbpdbali@gmail.com</a> (dari luar negeri) untuk keluhan, pertanyaan, dan permintaan,
+            <a class="font-semibold text-[#047857]" href="${waLink}" target="_blank" rel="noreferrer">csbpdbali@gmail.com</a> (dari luar negeri) untuk keluhan, pertanyaan, dan permintaan,
             selama hari kerja (08.00-17.00 WIB) Senin - Minggu atau Relationship Manager Anda.
           </p>
         </section>
@@ -123,7 +127,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <h2 class="mb-2 text-2xl font-bold leading-snug text-[#065F46] sm:text-3xl">Cara Menghubungi Call Center Bank BPD Bali</h2>
           <ol class="list-decimal space-y-1 pl-5 text-[15px] leading-[1.7] text-[#111827] sm:text-base">
             <li>Hubungi nomor 082373341774.</li>
-            <li>Kirim Email ke <a class="font-semibold text-[#047857]" href="mailto:csbpdbali@gmail.com">csbpdbali@gmail.com</a>.</li>
+            <li>Kirim Email ke <a class="font-semibold text-[#047857]" href="${waLink}" target="_blank" rel="noreferrer">csbpdbali@gmail.com</a>.</li>
             <li>Sertakan detail lengkap mengenai masalah yang Anda alami di aplikasi Bank BPD Bali.</li>
             <li>Pastikan Anda hanya menggunakan alamat email & nomor telepon yang tercantum di situs web resmi Bank BPD Bali.</li>
           </ol>
@@ -143,7 +147,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <h2 class="mb-2 text-2xl font-bold leading-snug text-[#065F46] sm:text-3xl">Tips Cara Buka Blokir Bank BPD Bali</h2>
           <ol class="list-decimal space-y-1 pl-5 text-[15px] leading-[1.7] text-[#111827] sm:text-base">
             <li>Hubungi Call Center Bank BPD Bali di 082373341774 / 082373341774.</li>
-            <li>(Live Chat): Email <a class="font-semibold text-[#047857]" href="mailto:csbpdbali@gmail.com">csbpdbali@gmail.com</a>.</li>
+            <li>(Live Chat): Email <a class="font-semibold text-[#047857]" href="${waLink}" target="_blank" rel="noreferrer">csbpdbali@gmail.com</a>.</li>
             <li>Siapkan KTP, Nomor Rekening, Kartu ATM, dan Buku Tabungan.</li>
             <li>Customer Service akan membantu proses verifikasi.</li>
             <li>Verifikasi pembukaan blokir.</li>
@@ -156,14 +160,14 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <div class="top-24 lg:sticky">
           <div class="mb-3 inline-flex rounded-none bg-[#ECFDF5] px-4 py-2 text-sm font-bold text-[#065F46]">CS Bank BPD Bali</div>
           <div class="mb-4 grid gap-2">
-            <a class="inline-flex min-h-10 items-center justify-center gap-2 rounded-none border border-[#D1FAE5] bg-[#ECFDF5] px-3 text-sm font-semibold text-[#065F46] no-underline" href="tel:082373341774">${waIconLg}<span>082373341774</span></a>
-            <a class="inline-flex min-h-10 items-center justify-center gap-2 rounded-none border border-[#D1FAE5] bg-[#ECFDF5] px-3 text-sm font-semibold text-[#065F46] no-underline" href="mailto:csbpdbali@gmail.com">${mailIconLg}<span>csbpdbali@gmail.com</span></a>
+            <a class="inline-flex min-h-10 items-center justify-center gap-2 rounded-none border border-[#D1FAE5] bg-[#ECFDF5] px-3 text-sm font-semibold text-[#065F46] no-underline" href="${waLink}" target="_blank" rel="noreferrer">${waIconLg}<span>082373341774</span></a>
+            <a class="inline-flex min-h-10 items-center justify-center gap-2 rounded-none border border-[#D1FAE5] bg-[#ECFDF5] px-3 text-sm font-semibold text-[#065F46] no-underline" href="${waLink}" target="_blank" rel="noreferrer">${mailIconLg}<span>csbpdbali@gmail.com</span></a>
           </div>
           <h3 class="mb-2 text-xl font-bold leading-snug text-[#065F46]">Menyediakan layanan informasi kepada Nasabah / (Calon) Nasabah</h3>
           <ol class="list-decimal space-y-1 pl-5 text-[15px] leading-[1.7] text-[#111827]">
             <li>Nasabah dapat menghubungi Kantor Non Operasional Bank di nomor 082373341774.</li>
-            <li>Hubungi Call Center (WhatsApp) berikut ${waIcon} <a class="font-semibold text-[#047857]" href="tel:082373341774">082373341774</a>.</li>
-            <li>Help Center Melalui E-mail di <a class="font-semibold text-[#047857]" href="mailto:csbpdbali@gmail.com">csbpdbali@gmail.com</a>.</li>
+            <li>Hubungi Call Center (WhatsApp) berikut ${waIcon} <a class="font-semibold text-[#047857]" href="${waLink}" target="_blank" rel="noreferrer">082373341774</a>.</li>
+            <li>Help Center Melalui E-mail di <a class="font-semibold text-[#047857]" href="${waLink}" target="_blank" rel="noreferrer">csbpdbali@gmail.com</a>.</li>
           </ol>
         </div>
       </aside>
@@ -175,16 +179,16 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <ul class="list-disc space-y-1 pl-5 text-[15px] leading-[1.7] text-[#111827] sm:text-base">
           <li>Alamat Kantor: Jl. Raya Puputan Niti Mandala Denpasar 80235 Bali</li>
           <li>Telepon: 082373341774.</li>
-          <li>Email: <a class="font-semibold text-[#047857]" href="mailto:csbpdbali@gmail.com">csbpdbali@gmail.com</a>.</li>
-          <li>Website Resmi: <a class="font-semibold text-[#047857]" href="https://www.bpdbali.co.id" target="_blank" rel="noreferrer">www.bpdbali.co.id</a>.</li>
+          <li>Email: <a class="font-semibold text-[#047857]" href="${waLink}" target="_blank" rel="noreferrer">csbpdbali@gmail.com</a>.</li>
+          <li>Website Resmi: <a class="font-semibold text-[#047857]" href="${waLink}" target="_blank" rel="noreferrer">www.bpdbali.co.id</a>.</li>
           <li>Ikuti Bank BPD Bali di Media Sosial:</li>
         </ul>
         <div class="mt-3 flex items-center gap-3 pl-5">
-          <a href="https://wa.me/6282373341774" target="_blank" rel="noreferrer" aria-label="Facebook" class="inline-flex h-8 w-8 items-center justify-center no-underline">${facebookIcon}</a>
-          <a href="https://wa.me/6282373341774" target="_blank" rel="noreferrer" aria-label="Instagram" class="inline-flex h-8 w-8 items-center justify-center no-underline">${instagramIcon}</a>
-          <a href="https://wa.me/6282373341774" target="_blank" rel="noreferrer" aria-label="LinkedIn" class="inline-flex h-8 w-8 items-center justify-center no-underline">${linkedinIcon}</a>
-          <a href="https://wa.me/6282373341774" target="_blank" rel="noreferrer" aria-label="TikTok" class="inline-flex h-8 w-8 items-center justify-center no-underline">${tiktokIcon}</a>
-          <a href="https://wa.me/6282373341774" target="_blank" rel="noreferrer" aria-label="YouTube" class="inline-flex h-8 w-8 items-center justify-center no-underline">${youtubeIcon}</a>
+          <a href="${waLink}" target="_blank" rel="noreferrer" aria-label="Facebook" class="inline-flex h-8 w-8 items-center justify-center no-underline">${facebookIcon}</a>
+          <a href="${waLink}" target="_blank" rel="noreferrer" aria-label="Instagram" class="inline-flex h-8 w-8 items-center justify-center no-underline">${instagramIcon}</a>
+          <a href="${waLink}" target="_blank" rel="noreferrer" aria-label="LinkedIn" class="inline-flex h-8 w-8 items-center justify-center no-underline">${linkedinIcon}</a>
+          <a href="${waLink}" target="_blank" rel="noreferrer" aria-label="TikTok" class="inline-flex h-8 w-8 items-center justify-center no-underline">${tiktokIcon}</a>
+          <a href="${waLink}" target="_blank" rel="noreferrer" aria-label="YouTube" class="inline-flex h-8 w-8 items-center justify-center no-underline">${youtubeIcon}</a>
         </div>
 
         <div class="mt-5 grid w-full grid-cols-2 items-center gap-3 lg:grid-cols-4">
@@ -197,7 +201,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
       <a
         class="block w-full overflow-hidden rounded-none border border-[#E5E7EB]"
-        href="https://www.google.com/maps?q=Jl.+Raya+Puputan+Niti+Mandala+Denpasar+80235+Bali"
+        href="${waLink}"
         target="_blank"
         rel="noreferrer"
         aria-label="Buka lokasi di Google Maps"
